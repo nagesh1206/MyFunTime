@@ -55,6 +55,7 @@ public class TheaterSeatingSimulator {
 				String[] sectionDetails = rows[i].split(" ");
 				for (int j = 0; j < sectionDetails.length; j++) {
 					Section section = new Section();
+					section.setRowNumber(row.getRowNumber());
 					section.setSectionNumber(j+1);
 					section.setCapacity(Integer.parseInt(sectionDetails[j]));
 					rowSections.add(section);

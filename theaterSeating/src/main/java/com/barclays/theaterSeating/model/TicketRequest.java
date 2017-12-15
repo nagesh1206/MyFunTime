@@ -4,6 +4,7 @@ public class TicketRequest {
 
 	private String requestedBy;
 	private int noOfTickets;
+	private String confirmation;
 
 	public String getRequestedBy() {
 		return requestedBy;
@@ -19,6 +20,14 @@ public class TicketRequest {
 
 	public void setNoOfTickets(int noOfTickets) {
 		this.noOfTickets = noOfTickets;
+	}
+
+	public String getConfirmation() {
+		return confirmation;
+	}
+
+	public void setConfirmation(String confirmation) {
+		this.confirmation = confirmation;
 	}
 
 }
