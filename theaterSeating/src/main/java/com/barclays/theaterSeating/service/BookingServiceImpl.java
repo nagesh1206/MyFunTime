@@ -53,7 +53,7 @@ public class BookingServiceImpl implements BookingService {
 		ticketRequests = ticketRequests.stream().sorted(Comparator.comparing(TicketRequest::getNoOfTickets))
 				.collect(Collectors.toList());
 
-		outerLoop: for (Row row : layout.getRows()) {
+		for (Row row : layout.getRows()) {
 			for (Section section : row.getSections()) {
 
 				TicketRequest currentRequest = openRequest(ticketRequests);
@@ -84,7 +84,7 @@ public class BookingServiceImpl implements BookingService {
 					}
 				} else {
 					//No more requests to fulfill
-					break outerLoop;
+					return;
 				}
 			}
 		}
