@@ -32,3 +32,7 @@ Note: Current implementation works with at least java 1.8 due to use of lambda
 	Williams Row 1 Section 1
 	Brown Row 4  Section 2
 	Miller Call to split party.
+	
+### TODO ###
+1. Excpetion Handling with separate package driving across
+2. Service DI (dependency injection) - Spring 
